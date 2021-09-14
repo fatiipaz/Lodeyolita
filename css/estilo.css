@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Gral */
+
+li{
+	padding: 10px;
+	list-style: none;
+	display: inline;
+}
+a {
+	text-decoration: none; font-family: tahoma;
+	font-size: 20px;
+}
+
+/* Grid Container Nav */
+
+.gridContainerNav{
+	display: grid;
+	gap: 2em;
+	align-items: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+section.encabezado {
+	color: white; 
+	font-size: 50px; 
+	text-align: center; font-family: 'Galada', cursive;
+	background-image: url("../Assets/imagenes/wallpaper.jpg");
+}
+
+h3.rrss {
+	color: white; font-size: 30px; text-align: right;
+	background-color: black;
+	font-family: 'Galada', cursive;
+}
+p.textoIndex{
+	color: black; 
+	font-size: 15px; 
+	font-family: tahoma, sans-serif; 
+	text-align: justify;
+}
+
+table.menu {
+	color: black; font-size: 15px; font-family: tahoma, sans-serif; text-align: justify;
+	background-size: center; list-style: none;
+}
+/* Grid Galeria*/
+.gridContainerGaleria{
+	display: grid;
+	grid-template-areas:
+	"logo nav nav"
+	"encabezado encabezado encabezado"
+	"galeria galeria galeria"
+	"footer footer footer" ;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 33% 33% 33%;
+}
+.logo{ grid-area: logo;}
+.nav{ grid-area: nav; }
+.encabezado { grid-area: encabezado; }
+#galeria{ grid-area: galeria; }
+footer{ grid-area: footer; }
+
+.gridGaleria{
+	display: grid;
+	grid-template-areas:
+	"img1 img2 img3"
+	"img4 img5 img6"
+	"img7 img8 img9";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: auto auto auto;
+}
+
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+.img4{grid-area: img4;}
+.img5{grid-area: img5;}
+.img6{grid-area: img7;}
+.img7{grid-area: img6;}
+.img8{grid-area: img8;}
+.img9{grid-area: img9;}
+
